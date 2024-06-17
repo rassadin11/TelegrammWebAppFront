@@ -1,6 +1,6 @@
 import "./App.css";
 //import React, { useState } from "react";
-import { MakeProduct } from "./components/productChain";
+//import { MakeProduct } from "./components/productChain";
 
 const TgWeb = window.Telegram.WebApp;
 
@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <h1>Hello Word</h1>
-      <MakeProduct />
       <button onClick={CloseApp}>close</button>
     </>
   );
