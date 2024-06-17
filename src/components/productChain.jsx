@@ -1,19 +1,22 @@
-const product = [
-  { price: "2000", discription: "erregregg", id: 1 },
-  { price: "20", discription: "2342243", id: 2 },
-];
-
+class Product {
+  constructor(name, price, description) {
+    this;
+    this._name = name;
+    this._price = price;
+    this._description = description;
+    this.product = {
+      name: this.name,
+      price: this.price,
+      description: this.description_,
+    };
+    return "faefafqefqff";
+  }
+}
 export function MakeProduct() {
+  const product = new Product("apple", 100, "goood");
   return (
     <>
-      {product.map((pr) => {
-        return (
-          <div key={pr.id}>
-            <p>{pr.price}</p>
-            <p>{pr.discription}</p>
-          </div>
-        );
-      })}
+      <div>{product._name}</div>
     </>
   );
 }

@@ -1,19 +1,20 @@
 import "./App.css";
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import { MakeProduct } from "./components/productChain";
 
+const TgWeb = window.Telegram.WebApp;
+
 function App() {
-  const [like, func] = useState(0);
-  console.log(like, func());
+  const CloseApp = () => {
+    TgWeb.close();
+    console.log(TgWeb);
+  };
 
   return (
     <>
       <h1>Hello Word</h1>
       <MakeProduct />
-      <div>
-        <button>лайк +</button>
-        <button>лайк -</button>
-      </div>
+      <button onClick={CloseApp}>close</button>
     </>
   );
 }
