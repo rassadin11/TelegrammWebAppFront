@@ -1,0 +1,74 @@
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-gap: 15px;
+}
+
+.input {
+  padding: 10px 4px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #271442;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.button {
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #2c2762;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 51px 9px rgba(44, 39, 98, 0.2);
+  width: 100%;
+}
+
+.button:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 4px 4px 51px 9px rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  text-align: center;
+}
+
+.showInput {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.showInput.active {
+  transform: none;
+  opacity: 1;
+}
+
+.delay {
+  transition-delay: 0.5s;
+}
+
+.delayBtn {
+  transition-delay: 1s;
+}

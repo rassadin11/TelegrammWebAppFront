@@ -1,13 +1,19 @@
+import s from '../css/Header.module.css'
+
 const Header = () => {
   return (
     <>
-      <div>
-        <a href="/home">Home</a>
+      <div className={s.header}>
+        <a href='/home' className={s.link}>
+          Home
+        </a>
         <span> | </span>
-        <a href="/login">Login</a>
+        <a href='/login' className={s.link}>
+          Login
+        </a>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
